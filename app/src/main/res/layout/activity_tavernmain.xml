@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#176b87"
+    android:id="@+id/tavern_main"
+    tools:context=".tavernmain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/tavernbg6">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/tavernbg1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/tavern_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paimon\'s Tavern"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#176b87"
+                android:textSize="30dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/mondstadt"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:onClick="showmonstadtmenu"
+                            android:src="@drawable/mondstadt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text=" Mondstadt Menu "
+                            android:textSize="15sp"
+                            android:background="@drawable/tavernbg1"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#176b87"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/liyue"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:onClick="showliyuemenu"
+                            android:src="@drawable/liyue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:text=" Liyue Menu "
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:background="@drawable/tavernbg1"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#176b87"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/inazuma"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:onClick="showinazumamenu"
+                            android:src="@drawable/inazuma"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:text=" Inazuma Menu "
+                            android:textSize="15sp"
+                            android:background="@drawable/tavernbg1"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#176b87"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/sumeru"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:onClick="showsumerumenu"
+                            android:src="@drawable/sumeru"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:text=" Sumeru Menu "
+                            android:textSize="15sp"
+                            android:background="@drawable/tavernbg1"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#176b87"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/fontaine"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:onClick="showfontainemenu"
+                            android:src="@drawable/fontaine"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:text=" Fontaine Menu "
+                            android:textSize="15sp"
+                            android:background="@drawable/tavernbg1"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#176b87"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/handbook_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:onClick="showhandbook"
+            android:src="@drawable/ic_action_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/tavernbg4"
+            android:text=" Back "
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

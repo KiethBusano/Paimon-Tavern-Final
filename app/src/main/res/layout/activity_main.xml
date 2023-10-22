@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#176b87"
+    android:id="@+id/layout1"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/tavernbg5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/tavernbg1"
+            android:text=" Enter your Traveler name "
+            android:textColor="#04364a"
+            app:layout_constraintBottom_toTopOf="@+id/traveler_name"
+            app:layout_constraintEnd_toEndOf="@+id/traveler_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/traveler_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/login"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_margin"
+            android:hint="    Enter Your Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/traveler_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/traveler_name"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_margin"
+            android:hint="    Confirm Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/traveler_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveler_name"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/tavernbg1"
+            android:text=" Confirm your name "
+            android:textColor="#04364a"
+            app:layout_constraintBottom_toTopOf="@+id/traveler_confirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/traveler_name"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveler_confirm"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tavernbg1"
+            android:text=""
+            android:textColor="#ff0000"
+            app:layout_constraintEnd_toEndOf="@+id/traveler_confirm"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/traveler_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/traveler_confirm" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveler_confirm"
+            android:layout_alignStart="@+id/traveler_confirm"
+            android:layout_alignEnd="@+id/traveler_confirm"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="56dp"
+            android:backgroundTint="#176b87"
+            android:text="Enter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/traveler_confirm" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tavern_logo" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tavernbg1"
+            android:fontFamily="sans-serif-black"
+            android:text="  Login  "
+            android:textAlignment="center"
+            android:textColor="#04364a"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.31" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>
